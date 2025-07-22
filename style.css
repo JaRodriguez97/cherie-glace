@@ -84,20 +84,36 @@ header:hover {
 /* Menu Grid Styles */
 .menu-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(4, 1fr);
+  /* grid-auto-rows: 80px; */
+  grid-auto-flow: row dense;
+  gap: 1.5rem;
   margin-bottom: 3rem;
+  align-items: start;
+}
+
+.card-small {
+  grid-column: span 1;
+  grid-row: span 2;
+}
+
+.card-medium {
+  grid-column: span 2;
+  grid-row: span 3;
+}
+
+.card-large {
+  grid-column: span 2;
+  grid-row: span 4;
 }
 
 .category-card {
-  background: rgba(255, 255, 255, 0.95);
   border-radius: 20px;
   padding: 1.5rem;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
-  backdrop-filter: blur(10px);
   border: 2px solid rgba(244, 141, 168, 0.1);
-  height: 100%;
+  height: fit-content;
   display: flex;
   flex-direction: column;
 }
@@ -136,6 +152,46 @@ header:hover {
   flex: 1;
 }
 
+/* Specific styles for each card size */
+.card-small .category-title {
+  font-size: 1.6rem;
+}
+
+.card-medium .category-title {
+  font-size: 1.9rem;
+}
+
+.card-large .category-title {
+  font-size: 2rem;
+}
+
+.card-small .category-image {
+  width: 70px;
+  height: 70px;
+}
+
+.card-medium .category-image {
+  width: 85px;
+  height: 85px;
+}
+
+.card-large .category-image {
+  width: 90px;
+  height: 90px;
+}
+
+.card-small {
+  background: rgba(255, 255, 255, 0.95);
+}
+
+.card-medium {
+  background: rgba(255, 255, 255, 0.92);
+}
+
+.card-large {
+  background: rgba(255, 255, 255, 0.90);
+}
+
 .item {
   display: flex;
   justify-content: space-between;
@@ -143,6 +199,7 @@ header:hover {
   padding: 0.8rem 0;
   border-bottom: 1px solid rgba(168, 216, 234, 0.3);
   transition: all 0.2s ease;
+  white-space: nowrap;
 }
 
 .item:hover {
@@ -160,12 +217,16 @@ header:hover {
   font-weight: 500;
   color: #333;
   flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .item-price {
   font-weight: 600;
   color: #a8d8ea;
   font-size: 1.1rem;
+  white-space: nowrap;
 }
 
 /* Adicionales Styles */
@@ -186,19 +247,6 @@ header:hover {
   position: relative;
 }
 
-.adicionales h2::before {
-  content: "✨";
-  position: absolute;
-  left: -40px;
-  top: 0;
-}
-
-.adicionales h2::after {
-  content: "✨";
-  position: absolute;
-  right: -40px;
-  top: 0;
-}
 
 .adicionales-grid {
   display: grid;
@@ -274,8 +322,16 @@ footer a:hover {
   }
 
   .menu-grid {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .card-medium {
+    grid-column: span 2;
+  }
+
+  .card-small, .card-large {
+    grid-column: span 1;
   }
 
   .category-card {
@@ -287,9 +343,6 @@ footer a:hover {
     height: 60px;
   }
 
-  .category-title {
-    font-size: 1.5rem;
-  }
 
   .adicionales-grid {
     grid-template-columns: 1fr;
@@ -297,6 +350,15 @@ footer a:hover {
 }
 
 @media (max-width: 480px) {
+  .menu-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .card-small, .card-medium, .card-large {
+    grid-column: span 1;
+  }
+
   .category-header {
     flex-direction: column;
     text-align: center;
@@ -307,8 +369,4 @@ footer a:hover {
     margin-bottom: 1rem;
   }
 
-  .adicionales h2::before,
-  .adicionales h2::after {
-    display: none;
-  }
 }

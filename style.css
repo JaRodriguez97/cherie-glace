@@ -189,6 +189,7 @@ header:hover {
   height: fit-content;
   display: flex;
   flex-direction: column;
+  background: rgba(255, 255, 255, 0.95);
 }
 
 .category-card:hover {
@@ -234,18 +235,6 @@ header:hover {
   font-style: italic;
 }
 
-.card-small {
-  background: rgba(255, 255, 255, 0.95);
-}
-
-.card-medium {
-  background: rgba(255, 255, 255, 0.92);
-}
-
-.card-large {
-  background: rgba(255, 255, 255, 0.9);
-}
-
 .item {
   display: flex;
   justify-content: space-between;
@@ -267,9 +256,20 @@ header:hover {
   border-bottom: none;
 }
 
+.item-image {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid #f48da8;
+  box-shadow: 0 5px 15px rgba(244, 141, 168, 0.3);
+}
+
 .item-name {
   font-weight: 500;
   color: #333;
+  width: 50%;
+  text-align: left;
 }
 
 .item-price {

@@ -26,19 +26,16 @@
     <link
       rel="icon"
       type="image/png"
-      href="https://img.freepik.com/foto-gratis/primer-plano-helado-tazon_23-2148569469.jpg?t=st=1752369830~exp=1752373430~hmac=8f8410e44d6e92d005b4b331c38524c0a7af1ce2729af13dd7b496ac01cf87ef&w=32"
+      href="./assets/cherieglacelogo.png"
       sizes="32x32"
     />
     <link
       rel="icon"
       type="image/png"
-      href="https://img.freepik.com/foto-gratis/primer-plano-helado-tazon_23-2148569469.jpg?t=st=1752369830~exp=1752373430~hmac=8f8410e44d6e92d005b4b331c38524c0a7af1ce2729af13dd7b496ac01cf87ef&w=16"
+      href="./assets/cherieglacelogo.png"
       sizes="16x16"
     />
-    <link
-      rel="apple-touch-icon"
-      href="https://img.freepik.com/foto-gratis/primer-plano-helado-tazon_23-2148569469.jpg?t=st=1752369830~exp=1752373430~hmac=8f8410e44d6e92d005b4b331c38524c0a7af1ce2729af13dd7b496ac01cf87ef&w=180"
-    />
+    <link rel="apple-touch-icon" href="./assets/cherieglacelogo.png" />
 
     <!-- Open Graph tags for social sharing -->
     <meta
@@ -49,10 +46,7 @@
       property="og:description"
       content="Disfruta de los mejores helados artesanales, malteadas, postres y más. Frío, dulce y con amor. Visítanos hoy mismo."
     />
-    <meta
-      property="og:image"
-      content="https://img.freepik.com/foto-gratis/primer-plano-helado-tazon_23-2148569469.jpg?t=st=1752369830~exp=1752373430~hmac=8f8410e44d6e92d005b4b331c38524c0a7af1ce2729af13dd7b496ac01cf87ef&w=1380"
-    />
+    <meta property="og:image" content="./assets/cherieglacelogo.png" />
     <meta property="og:image:width" content="1380" />
     <meta property="og:image:height" content="920" />
     <meta property="og:url" content="https://cherieglace.netlify.app/" />
@@ -70,10 +64,7 @@
       name="twitter:description"
       content="Disfruta de los mejores helados artesanales, malteadas, postres y más. Frío, dulce y con amor."
     />
-    <meta
-      name="twitter:image"
-      content="https://img.freepik.com/foto-gratis/primer-plano-helado-tazon_23-2148569469.jpg?t=st=1752369830~exp=1752373430~hmac=8f8410e44d6e92d005b4b331c38524c0a7af1ce2729af13dd7b496ac01cf87ef&w=1380"
-    />
+    <meta name="twitter:image" content="./assets/cherieglacelogo.png" />
 
     <!-- Structured Data / Schema.org for Local Business -->
     <script type="application/ld+json">
@@ -81,7 +72,7 @@
         "@context": "https://schema.org",
         "@type": "IceCreamShop",
         "name": "Chérie Glace",
-        "image": "https://img.freepik.com/foto-gratis/primer-plano-helado-tazon_23-2148569469.jpg?t=st=1752369830~exp=1752373430~hmac=8f8410e44d6e92d005b4b331c38524c0a7af1ce2729af13dd7b496ac01cf87ef&w=1380",
+        "image": "./assets/cherieglacelogo.png",
         "@id": "https://cherieglace.netlify.app/",
         "url": "https://cherieglace.netlify.app/",
         "telephone": "+571234567890",
@@ -138,7 +129,7 @@
     </script>
 
     <!-- Additional SEO meta tags -->
-    <meta name="author" content="Chérie Glace" />
+    <meta name="author" content="JA__RG" />
     <meta name="geo.region" content="CO" />
     <meta name="geo.placename" content="Colombia" />
     <meta name="distribution" content="global" />
@@ -147,17 +138,34 @@
   <body>
     <div class="container">
       <header>
-        <h1 class="logo">Chérie Glace</h1>
-        <p class="tagline">Frío, dulce y con amor</p>
+        <div class="header-logo-container">
+          <img
+            src="./assets/cherieglacelogosolo.webp"
+            alt="Logo de Chérie Glace"
+            class="header-logo"
+            loading="eager"
+          />
+          <div class="header-text">
+            <h1 class="title-name">Chérie Glace</h1>
+            <p class="tagline">Frío, dulce y con amor</p>
+          </div>
+        </div>
         <div class="divider"></div>
       </header>
+
+      <div class="sauce-notice">
+        <p>
+          <strong>Cualquier helado lleva tu elección de salsa:</strong>
+          chocolate, mora o leche condensada.
+        </p>
+      </div>
 
       <main class="menu-grid">
         <!-- Menú de niños -->
         <article class="category-card card-large">
           <div class="category-header">
             <img
-              src="https://img.freepik.com/fotos-premium/postre-capas-pastel-esponja-chocolate-crema-batida-jalea-frutas-vasos-servicio_984237-6822.jpg?w=1380"
+              src="./assets/heladoinfantil.jpg"
               alt="Menú especial para niños"
               class="category-image"
               loading="lazy"
@@ -166,27 +174,31 @@
           </div>
           <div class="item">
             <span class="item-name">Búho</span>
-            <span class="item-price">$9.000</span>
+            <span class="item-price">$5.500</span>
           </div>
           <div class="item">
             <span class="item-name">Carrito</span>
-            <span class="item-price">$9.000</span>
+            <span class="item-price">$5.500</span>
           </div>
           <div class="item">
             <span class="item-name">Payasito</span>
-            <span class="item-price">$9.000</span>
+            <span class="item-price">$5.500</span>
           </div>
           <div class="item">
             <span class="item-name">Ratón</span>
-            <span class="item-price">$9.000</span>
+            <span class="item-price">$5.500</span>
           </div>
           <div class="item">
             <span class="item-name">Copa océano</span>
-            <span class="item-price">$8.000</span>
+            <span class="item-price">$5.500</span>
           </div>
           <div class="item">
             <span class="item-name">Copa vaca</span>
-            <span class="item-price">$9.000</span>
+            <span class="item-price">$5.500</span>
+          </div>
+          <div class="item">
+            <span class="item-name">+ Bola de helado</span>
+            <span class="item-price">$2.500</span>
           </div>
         </article>
         <!-- Ensaladas de frutas -->
@@ -199,13 +211,17 @@
               loading="lazy"
             />
             <h2 class="category-title">Ensaladas de frutas</h2>
+            <p class="category-description">
+              Papaya, piña, mango, banano, manzana verde, fresa, queso y bola de
+              helado.
+            </p>
           </div>
           <div class="item">
-            <span class="item-name">Ensalada de fruta 8 onzas</span>
+            <span class="item-name">Pequeña</span>
             <span class="item-price">$10.000</span>
           </div>
           <div class="item">
-            <span class="item-name">Ensalada de fruta grande</span>
+            <span class="item-name">Mediana</span>
             <span class="item-price">$14.000</span>
           </div>
         </article>
@@ -223,15 +239,15 @@
           </div>
           <div class="item">
             <span class="item-name">Sencilla</span>
+            <span class="item-price">$10.000</span>
+          </div>
+          <div class="item">
+            <span class="item-name">+ Chocorramo</span>
             <span class="item-price">$12.000</span>
           </div>
           <div class="item">
-            <span class="item-name">+Chocorramo</span>
-            <span class="item-price">$14.000</span>
-          </div>
-          <div class="item">
             <span class="item-name">+ Nutella</span>
-            <span class="item-price">$14.000</span>
+            <span class="item-price">$12.000</span>
           </div>
         </article>
 
@@ -247,12 +263,14 @@
             <h2 class="category-title">Copas especiales</h2>
           </div>
           <div class="item">
-            <span class="item-name">Copa queso</span>
-            <span class="item-price">$12.000</span>
-          </div>
-          <div class="item">
-            <span class="item-name">Copa banano fresa</span>
-            <span class="item-price">$14.000</span>
+            <div class="item-info">
+              <span class="item-name">Copa queso</span>
+              <span class="item-description"
+                >Queso, helado, crema de leche, lechera. Adicional fruta:
+                banano, durazno, fresas, o piña calada.</span
+              >
+            </div>
+            <span class="item-price">$10.000</span>
           </div>
         </article>
 
@@ -268,25 +286,13 @@
             <h2 class="category-title">Banana split</h2>
           </div>
           <div class="item">
-            <span class="item-name">Banana split</span>
-            <span class="item-price">$13.000</span>
-          </div>
-        </article>
-
-        <!-- Postres con frutas -->
-        <article class="category-card card-small">
-          <div class="category-header">
-            <img
-              src="https://img.freepik.com/foto-gratis/primer-plano-helado-tazon_23-2148569469.jpg?t=st=1752369830~exp=1752373430~hmac=8f8410e44d6e92d005b4b331c38524c0a7af1ce2729af13dd7b496ac01cf87ef&w=826"
-              alt="Postres con frutas y crema"
-              class="category-image"
-              loading="lazy"
-            />
-            <h2 class="category-title">Postres con frutas</h2>
-          </div>
-          <div class="item">
-            <span class="item-name">Durazno con crema</span>
-            <span class="item-price">$12.000</span>
+            <div class="item-info">
+              <span class="item-name">Banana split</span>
+              <span class="item-description"
+                >Banano fresco con tres bolas de helado y crema Chantilly.</span
+              >
+            </div>
+            <span class="item-price">$9.000</span>
           </div>
         </article>
 
@@ -302,16 +308,16 @@
             <h2 class="category-title">Malteadas</h2>
           </div>
           <div class="item">
-            <span class="item-name">Malteadas sencillas</span>
-            <span class="item-price">$12.000</span>
+            <span class="item-name">Sencillas</span>
+            <span class="item-price">$10.000</span>
           </div>
           <div class="item">
-            <span class="item-name">Malteada unicornio</span>
-            <span class="item-price">$14.000</span>
+            <span class="item-name">Unicornio</span>
+            <span class="item-price">$13.000</span>
           </div>
           <div class="item">
-            <span class="item-name">Malteada chocorramo</span>
-            <span class="item-price">$14.000</span>
+            <span class="item-name">Chocorramo</span>
+            <span class="item-price">$13.000</span>
           </div>
         </article>
 
@@ -319,28 +325,28 @@
         <article class="category-card card-large">
           <div class="category-header">
             <img
-              src="https://img.freepik.com/foto-gratis/ensalada-fruta-mixta-tazon-blanco_1150-20039.jpg?t=st=1752369400~exp=1752373000~hmac=c4e6a8b8e8e5e8b8e8e8e8e8e8e8e8e8e8e8e8e8e8e8e8e8e8e8e8e8e8e8e8e8&w=1380"
+              src="./assets/salpicon.jpg"
               alt="Salpicón de frutas frescas"
               class="category-image"
               loading="lazy"
             />
-            <h2 class="category-title">Salpicón</h2>
+            <h2 class="category-title">Delicioso Salpicón</h2>
           </div>
           <div class="item">
-            <span class="item-name">Salpicón 5.5 onz sin helado</span>
+            <span class="item-name">7 onzas</span>
+            <span class="item-price">$1.500</span>
+          </div>
+          <div class="item">
+            <span class="item-name">9 onzas</span>
+            <span class="item-price">$2.500</span>
+          </div>
+          <div class="item">
+            <span class="item-name">12 onzas</span>
             <span class="item-price">$4.000</span>
           </div>
           <div class="item">
-            <span class="item-name">Salpicón 5.5 onz con helado</span>
-            <span class="item-price">$7.000</span>
-          </div>
-          <div class="item">
-            <span class="item-name">Salpicón 7 onz sin helado</span>
-            <span class="item-price">$6.000</span>
-          </div>
-          <div class="item">
-            <span class="item-name">Salpicón 7 onz con helado</span>
-            <span class="item-price">$8.500</span>
+            <span class="item-name">+ Bola helado</span>
+            <span class="item-price">$2.000</span>
           </div>
         </article>
 
@@ -356,8 +362,18 @@
             <h2 class="category-title">Obleas</h2>
           </div>
           <div class="item">
-            <span class="item-name">Obleas</span>
-            <span class="item-price">$3.000</span>
+            <div class="item-info">
+              <span class="item-name">Obleas</span>
+              <span class="item-description"
+                >Arequipe, lechera, crema de leche, mermelada de mora y
+                queso.</span
+              >
+            </div>
+            <span class="item-price">$3.500</span>
+          </div>
+          <div class="item">
+            <span class="item-name">Solteritas</span>
+            <span class="item-price">$3.500</span>
           </div>
         </article>
 
@@ -406,66 +422,48 @@
             <h2 class="category-title">Gelada</h2>
           </div>
           <div class="item">
-            <span class="item-name">Gelada con helado</span>
-            <span class="item-price">$6.000</span>
+            <span class="item-name">Gelada con helado 9 onzas</span>
+            <span class="item-price">$7.000</span>
+          </div>
+        </article>
+
+        <!-- Jugos Naturales -->
+        <article class="category-card card-small">
+          <div class="category-header">
+            <img
+              src="https://img.freepik.com/foto-gratis/primer-plano-helado-tazon_23-2148569469.jpg?t=st=1752369830~exp=1752373430~hmac=8f8410e44d6e92d005b4b331c38524c0a7af1ce2729af13dd7b496ac01cf87ef&w=826"
+              alt="Jugos Naturales"
+              class="category-image"
+              loading="lazy"
+            />
+            <h2 class="category-title">Jugos Naturales</h2>
+          </div>
+          <div class="item">
+            <span class="item-name">Mora</span>
+            <span class="item-price">Próximamente</span>
+          </div>
+          <div class="item">
+            <span class="item-name">Mango</span>
+            <span class="item-price">Próximamente</span>
+          </div>
+          <div class="item">
+            <span class="item-name">Lulo</span>
+            <span class="item-price">Próximamente</span>
+          </div>
+          <div class="item">
+            <span class="item-name">Maracuyá</span>
+            <span class="item-price">Próximamente</span>
+          </div>
+          <div class="item">
+            <span class="item-name">Maracululo</span>
+            <span class="item-price">Próximamente</span>
+          </div>
+          <div class="item">
+            <span class="item-name">Maracumango</span>
+            <span class="item-price">Próximamente</span>
           </div>
         </article>
       </main>
-
-      <!-- Adicionales -->
-      <section class="adicionales">
-        <h2>Adicionales</h2>
-        <div class="adicionales-grid">
-          <div class="adicional-item">
-            <span class="item-name">Crema de leche</span>
-            <span class="item-price">$2.000</span>
-          </div>
-          <div class="adicional-item">
-            <span class="item-name">Lecherita</span>
-            <span class="item-price">$1.500</span>
-          </div>
-          <div class="adicional-item">
-            <span class="item-name">Arequipe</span>
-            <span class="item-price">$2.000</span>
-          </div>
-          <div class="adicional-item">
-            <span class="item-name">Queso rallado</span>
-            <span class="item-price">$2.500</span>
-          </div>
-          <div class="adicional-item">
-            <span class="item-name">Pepitas de colores</span>
-            <span class="item-price">$1.000</span>
-          </div>
-          <div class="adicional-item">
-            <span class="item-name">Granola</span>
-            <span class="item-price">$2.000</span>
-          </div>
-          <div class="adicional-item">
-            <span class="item-name">Nueces</span>
-            <span class="item-price">$3.000</span>
-          </div>
-          <div class="adicional-item">
-            <span class="item-name">Galletas trituradas</span>
-            <span class="item-price">$1.500</span>
-          </div>
-          <div class="adicional-item">
-            <span class="item-name">Salsa de chocolate</span>
-            <span class="item-price">$2.000</span>
-          </div>
-          <div class="adicional-item">
-            <span class="item-name">Salsa de fresa</span>
-            <span class="item-price">$2.000</span>
-          </div>
-          <div class="adicional-item">
-            <span class="item-name">Coco rallado</span>
-            <span class="item-price">$1.500</span>
-          </div>
-          <div class="adicional-item">
-            <span class="item-name">Chispas de chocolate</span>
-            <span class="item-price">$1.500</span>
-          </div>
-        </div>
-      </section>
 
       <footer>
         <p>
